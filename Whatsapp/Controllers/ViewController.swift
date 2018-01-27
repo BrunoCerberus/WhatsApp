@@ -22,6 +22,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.auth = Auth.auth()
+        
+        //Adicionar ouvinte para usuario autenticado
+        self.auth.addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.performSegue(withIdentifier: "segueLogin", sender: nil)
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,7 +77,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             if erro == nil {
                 
-                self.performSegue(withIdentifier: "segueLogin", sender: nil)
+                /*
+                    Usuario será levado diretamente para a view de conversas
+                    assim que for autenticado devido ao addStateDidChangeListener
+                */
+                
+//                self.performSegue(withIdentifier: "segueLogin", sender: nil)
                 
             } else {
                 var msg = ""

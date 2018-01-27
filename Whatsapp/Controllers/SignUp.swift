@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUp: UIViewController, UITextFieldDelegate {
 
@@ -16,12 +17,15 @@ class SignUp: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var criarContaButton: UIButton!
     
-    var autenticacao = Auth.auth()
+    var autenticacao: Auth!
+    var database: Database!
     var alerta: Alerta!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.autenticacao = Auth.auth()
+        self.database = Database.database()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,8 +54,17 @@ class SignUp: UIViewController, UITextFieldDelegate {
             
             if erro == nil {
                 
-                self.alerta = Alerta(_title: "Sucesso", _message: "Usuário cadastrado com sucesso", _controller: self)
-                self.alerta.show(fallBack: true)
+                var usuario: Dictionary<String, String> = [:]
+                
+                usuario["nome"] = _name
+                usuario["email"] = _email
+                
+                //Converter para base 64 email
+                let chave = Base64().codificarStringBase64(texto: _email)
+                
+                let usuarios = self.database.reference().child("usuarios")
+                usuarios.child(chave).setValue(usuario)
+                
             } else {
                 var msg = ""
                 

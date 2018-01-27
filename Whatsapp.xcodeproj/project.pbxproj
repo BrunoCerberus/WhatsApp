@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D1B1D1723FB0E66CED802D68 /* Pods_Whatsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A437DB62FAC5E5B43E69DFF9 /* Pods_Whatsapp.framework */; };
+		EC08E715201D0B7B007D079B /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08E714201D0B7B007D079B /* FirebaseUtil.swift */; };
+		EC08E717201D1574007D079B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08E716201D1574007D079B /* Usuario.swift */; };
 		EC0D11C9201A9DD300E55A8B /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D11C8201A9DD300E55A8B /* SignUp.swift */; };
 		EC0D11CB201AA33E00E55A8B /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D11CA201AA33E00E55A8B /* Alerta.swift */; };
+		EC2C38D9201CB4C0001981BA /* SairButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C38D8201CB4C0001981BA /* SairButtom.swift */; };
 		EC57B1002019E35A00D07FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC57B0FF2019E35A00D07FD3 /* AppDelegate.swift */; };
 		EC57B1052019E35A00D07FD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC57B1032019E35A00D07FD3 /* Main.storyboard */; };
 		EC57B1082019E35A00D07FD3 /* Whatsapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC57B1062019E35A00D07FD3 /* Whatsapp.xcdatamodeld */; };
@@ -17,13 +20,20 @@
 		EC57B10D2019E35A00D07FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC57B10B2019E35A00D07FD3 /* LaunchScreen.storyboard */; };
 		EC57B1152019E42700D07FD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC57B1142019E42700D07FD3 /* GoogleService-Info.plist */; };
 		EC57B11B2019E99700D07FD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC57B11A2019E99700D07FD3 /* ViewController.swift */; };
+		ECACB62C201C9FFD00F5BBEE /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACB62B201C9FFD00F5BBEE /* Chats.swift */; };
+		ECACB62E201CA02000F5BBEE /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACB62D201CA02000F5BBEE /* Contacts.swift */; };
+		ECACB630201CA02F00F5BBEE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACB62F201CA02F00F5BBEE /* Config.swift */; };
+		ECACB633201CAC1C00F5BBEE /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACB632201CAC1C00F5BBEE /* Base64.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		011C27071DC5C4B670A7F9DF /* Pods-Whatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whatsapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whatsapp/Pods-Whatsapp.release.xcconfig"; sourceTree = "<group>"; };
 		A437DB62FAC5E5B43E69DFF9 /* Pods_Whatsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC08E714201D0B7B007D079B /* FirebaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		EC08E716201D1574007D079B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		EC0D11C8201A9DD300E55A8B /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		EC0D11CA201AA33E00E55A8B /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		EC2C38D8201CB4C0001981BA /* SairButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SairButtom.swift; sourceTree = "<group>"; };
 		EC57B0FC2019E35A00D07FD3 /* Whatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC57B0FF2019E35A00D07FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC57B1042019E35A00D07FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,6 +44,10 @@
 		EC57B1142019E42700D07FD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC57B1162019E6D700D07FD3 /* Whatsapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whatsapp.entitlements; sourceTree = "<group>"; };
 		EC57B11A2019E99700D07FD3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECACB62B201C9FFD00F5BBEE /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
+		ECACB62D201CA02000F5BBEE /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		ECACB62F201CA02F00F5BBEE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		ECACB632201CAC1C00F5BBEE /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 		EEFFDCC49DE49B4A75A91666 /* Pods-Whatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whatsapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whatsapp/Pods-Whatsapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +105,7 @@
 				EC57B10E2019E35A00D07FD3 /* Info.plist */,
 				EC57B1142019E42700D07FD3 /* GoogleService-Info.plist */,
 				EC57B1062019E35A00D07FD3 /* Whatsapp.xcdatamodeld */,
+				ECACB631201CAC0300F5BBEE /* Helper */,
 				EC57B1192019E93F00D07FD3 /* Models */,
 				EC57B1182019E93600D07FD3 /* Storyboards */,
 				EC57B1172019E92D00D07FD3 /* Controllers */,
@@ -105,6 +120,9 @@
 			children = (
 				EC57B11A2019E99700D07FD3 /* ViewController.swift */,
 				EC0D11C8201A9DD300E55A8B /* SignUp.swift */,
+				ECACB62B201C9FFD00F5BBEE /* Chats.swift */,
+				ECACB62D201CA02000F5BBEE /* Contacts.swift */,
+				ECACB62F201CA02F00F5BBEE /* Config.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,8 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				EC0D11CA201AA33E00E55A8B /* Alerta.swift */,
+				EC2C38D8201CB4C0001981BA /* SairButtom.swift */,
+				EC08E716201D1574007D079B /* Usuario.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ECACB631201CAC0300F5BBEE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ECACB632201CAC1C00F5BBEE /* Base64.swift */,
+				EC08E714201D0B7B007D079B /* FirebaseUtil.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +241,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Whatsapp/Pods-Whatsapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -219,6 +249,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -268,10 +299,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC57B11B2019E99700D07FD3 /* ViewController.swift in Sources */,
+				EC2C38D9201CB4C0001981BA /* SairButtom.swift in Sources */,
 				EC0D11CB201AA33E00E55A8B /* Alerta.swift in Sources */,
+				EC08E715201D0B7B007D079B /* FirebaseUtil.swift in Sources */,
 				EC0D11C9201A9DD300E55A8B /* SignUp.swift in Sources */,
 				EC57B1002019E35A00D07FD3 /* AppDelegate.swift in Sources */,
+				ECACB633201CAC1C00F5BBEE /* Base64.swift in Sources */,
 				EC57B1082019E35A00D07FD3 /* Whatsapp.xcdatamodeld in Sources */,
+				EC08E717201D1574007D079B /* Usuario.swift in Sources */,
+				ECACB630201CA02F00F5BBEE /* Config.swift in Sources */,
+				ECACB62C201C9FFD00F5BBEE /* Chats.swift in Sources */,
+				ECACB62E201CA02000F5BBEE /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
